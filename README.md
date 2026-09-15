@@ -16,9 +16,9 @@ remake/
 | Theme | Overlay | URL | Resolution | Shows |
 |---|---|---|---|---|
 | flyingtuna | `FlyingTunaRemake` | `http://127.0.0.1:24050/FlyingTunaRemake/` | 1920 x 1080 | pp, pp for FC, 100/50/miss, stars, mods, AR/OD/CS/HP, result-screen recap |
-| flyingtuna | `FlyingTunaRemakeSong` | `http://127.0.0.1:24050/FlyingTunaRemakeSong/` | 1920 x 1080 | artist/title/mapper/diff, beatmap background, pp at 95–100% |
-| ryuk | `PPCounter` | `http://127.0.0.1:24050/PPCounter/` | 1920 x 1080 | pp, SS pp, pp for FC, grade, 100/50/miss, slider breaks |
-| ryuk | `UnstableRate` | `http://127.0.0.1:24050/UnstableRate/` | 300 x 100 | unstable rate during gameplay |
+| flyingtuna | `FlyingTunaRemakeSong` | `http://127.0.0.1:24050/FlyingTunaRemakeSong/` | 1024 x 135 | artist/title/mapper/diff, beatmap background, pp at 95–100% |
+| ryuk | `PPCounter` | `http://127.0.0.1:24050/PPCounter/` | 600 x 110 | pp, SS pp, pp for FC, grade, 100/50/miss, slider breaks |
+| ryuk | `UnstableRate` | `http://127.0.0.1:24050/UnstableRate/` | 200 x 200 | unstable rate during gameplay |
 | sotarks | `SotarksRemake` | `http://127.0.0.1:24050/SotarksRemake/` | 1920 x 1080 | full-screen: song box + ranked status + mod icons, play cut-in, CS/AR/OD/HP/stars, pp at 96–100%, 100/50/miss, strain-graph progress bar with live pp |
 
 ## Install
@@ -38,10 +38,6 @@ Overlay logic lives in each folder's `index.js`, which exports `update(data)` an
 ```sh
 npm test
 ```
-
-## Testing on macOS (osu! in Wineskin)
-
-`tools/run-tosu-wine.sh` runs the latest tosu inside the `osu!Stable.app` prefix so it can read the game's memory, and copies every overlay here into tosu's `static/` folder (tosu 4.x refuses symlinked paths). After editing an overlay, run `tools/sync-overlays.sh` to re-copy; no tosu restart needed. The wrapper's wine 6.0.2 lacks two kernel32 exports that tosu needs, so the script first runs `tools/patch-wine-kernel32.py`, which adds them to the 64-bit `kernel32.dll` (backup kept as `kernel32.dll.orig`, `--restore` undoes it). Then open `http://127.0.0.1:24050/<Overlay>/` in a browser or OBS.
 
 ## gosumemory → tosu field map
 
