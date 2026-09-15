@@ -1,0 +1,8 @@
+Usecase: obs-overlay
+Name: Unstable Rate
+Version: 2.0
+Author: _StarChaser
+CompatibleWith: tosu
+Resolution: 200 x 200
+authorLinks: https://github.com/ST4RCHASER/tosu-overlays
+Notes: Minimal unstable-rate readout shown during gameplay.

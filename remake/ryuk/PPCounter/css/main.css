@@ -1,0 +1,145 @@
+html,
+body {
+  font-size: 24px;
+  color: white;
+  font-family: "Baloo Chettan 2", cursive !important;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 30px;
+}
+#box {
+  background-color: #19242f;
+  width: fit-content;
+  height: 70px;
+  box-shadow: inset 7px 0 0px -2px #fd4652;
+  transition: width 0.3s ease-in-out;
+  margin-top: 30px;
+  margin-left: 70px;
+}
+.counter-container{
+  overflow: hidden;
+  height: 70px;
+}
+#box .container {
+  transition: margin 0.3s ease-in-out;
+  height: 70px;
+  overflow: hidden;
+}
+#box,
+.container.pp-perfect {
+  width: 210px;
+}
+#box .container.pp-play {
+  margin-top: -70px;
+}
+#box.play .container.pp-play {
+  margin-top: 0;
+}
+#box.play,
+.container.pp-play {
+  width: 425px;
+}
+.pp-perfect {
+  padding-top: 12px;
+}
+.pp-play {
+  padding-top: 8px;
+  font-size: 34px;
+}
+#box.play > div:first-child {
+  margin-top: 0;
+}
+.red {
+  color: #fd4652;
+}
+.pp_txt {
+  text-align: center;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+#counter_box {
+  display: inline;
+}
+.inline {
+  display: inline;
+}
+.counter {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.dot-container {
+  margin-top: -6px;
+}
+.dot-container > div > div {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.dot-container > div > div.hit-100 {
+  background-color: #20d648;
+  box-shadow: 0 0 10px #20d648, inset 0 0 10px #20d648;
+}
+
+.dot-container > div > div.hit-50 {
+  background-color: #8f46f8;
+  box-shadow: 0 0 10px #8f46f8, inset 0 0 10px #8f46f8;
+}
+
+.dot-container > div > div.hit-0 {
+  background-color: #ff434f;
+  box-shadow: 0 0 10px #ff434f, inset 0 0 10px #ff434f;
+}
+/* #FD4652,210 */
+
+/* FLOATING STUFF */
+.floating-container {
+  position: relative;
+}
+
+.floating-container .count-pp-fc,
+.floating-container .count-sb {
+  position: absolute;
+  background: white;
+  display: inline-block;
+  z-index: 100;
+  font-size: 21px;
+  border-radius: 4px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-shadow: 0px 1px #000000;
+  bottom: -15px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.floating-container .count-pp-fc {
+  box-shadow: 0 0 15px #ff434e, inset 0 0 15px #ff434e;
+  background: #ff434e;
+  left: 50px;
+}
+.floating-container .count-sb {
+  right: 30px;
+  box-shadow: 0 0 15px #7a8085, inset 0 0 15px #7a8085;
+  background: #7a8085;
+}
+.box_hide{
+  opacity: 0 !important;
+  transform: scale(0);
+  bottom: -30px !important;
+}
+.rank {
+  position: fixed;
+  font-size: 58px;
+  color: white;
+  top: 0;
+  padding-top: 18px;
+}

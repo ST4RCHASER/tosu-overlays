@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/FA.css" />
+    <link rel="stylesheet" href="css/odometr.css" />
+    <title>Flyingtuna Remake</title>
+  </head>
+  <body>
+    <div id="result_screen_bg">
+      <div id="result_pp">0pp</div>
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 1920 300"
+        enable-background="new 0 0 1920 300"
+        xml:space="preserve"
+      >
+        <path
+          id="vec"
+          fill="#0C0A0C"
+          stroke="#29292B"
+          stroke-width="10"
+          stroke-miterlimit="10"
+          d="M-4.8,289.6c79,2.8,146.5-0.7,198.9-5.6
+     c63.6-5.9,126.3-12,206.1-34.8c53-15.1,96.8-32.8,123.8-43.7c66.7-27.1,80.8-38.7,124.7-55.9c66-25.9,119.2-33.2,172.1-40.4
+     c142.9-19.5,255.6-1.9,296.6,5.7c66.7,12.2,122.7,30.4,151.2,39.8c36.4,12,66.1,23.5,124.3,46.2c89.4,34.8,86.1,35.9,114.3,45.8
+     c79.6,27.9,144,32.5,246.7,39.8c43.8,3.1,102.4,5.6,172.1,3.8c0.2,4.9,0.5,9.8,0.7,14.7c-643.8,0-1287.7,0-1931.5,0L-4.8,289.6
+     L-4.8,289.6z"
+        />
+      </svg>
+      <div id="result_100">0</div>
+      <div id="result_50">0</div>
+      <div id="result_0">0</div>
+    </div>
+    <div id="hit_counting_box" class="hide">
+      <div id="star_box">
+        <i style="color: #4e7fda" class="fas fa-star"></i>
+        <font id="star_num">6.37</font>
+      </div>
+      <div id="hit_counting">
+        <table>
+          <tr>
+            <td>
+              <font style="color: #63bd7c; font-size: 18px"
+                ><i class="fas fa-times"></i></font
+              >100
+            </td>
+            <td>
+              <font style="color: #675bb9; font-size: 18px"
+                ><i class="fas fa-times"></i></font
+              >50
+            </td>
+            <td>
+              <font style="color: #cf6168; font-size: 18px"
+                ><i class="fas fa-times"></i></font
+              >Miss
+            </td>
+          </tr>
+          <tr>
+            <td class="counting odometr" id="green">0</td>
+            <td class="counting odometr" id="purple">0</td>
+            <td class="counting odometr" id="red">0</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="pp_box" class="hide">
+      <div id="pp_box_num" class="num odometr">342</div>
+      <div class="blue">pp</div>
+    </div>
+    <div id="pp_fc_box" class="hide">
+      <div class="pp_fc_text">PP For FC</div>
+      <div id="pp_fc_num" class="odometer">550</div>
+    </div>
+    <div id="mods_box">
+      <div class="text hide" id="mods_txtt">
+        <div style="transform: skew(-15deg)">Mods</div>
+      </div>
+      <div class="text mods_txt hide" id="mods_txttt">
+        <div style="transform: skew(-15deg)" id="mods_txt">NM</div>
+      </div>
+    </div>
+    <div id="diff_box">
+      <div id="ar_box" class="box hide">AR: 10.00</div>
+      <div id="od_box" class="box hide">OD: 9.50</div>
+      <div id="cs_box" class="box hide">CS: 10.00</div>
+      <div id="hp_box" class="box hide">HP: 10.00</div>
+    </div>
+    <script src="deps/odometr.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

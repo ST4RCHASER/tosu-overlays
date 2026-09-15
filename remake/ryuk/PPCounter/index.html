@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/FA.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>RyuK Remake</title>
+    <div>
+      <div class="rank" id="rank">S+</div>
+      <div id="box" class="play">
+        <div class="floating-container">
+          <div id="fc_box" class="count-pp-fc"><font id="fc">362</font>pp</div>
+          <div id="sb" class="count-sb">10xSB</div>
+        </div>
+        <div class="counter-container">
+          <div class="container mx-0 pp-play">
+            <div class="row">
+              <div class="pp_txt col-sm-5">
+                <div id="pp_num">
+                  <font id="pp_current_num"></font><font class="red">PP</font>
+                </div>
+              </div>
+              <div id="counter_box" class="col-sm">
+                <div class="row">
+                  <div id="count_100" class="col counter">0</div>
+                  <div id="count_50" class="col counter">0</div>
+                  <div id="count_0" class="col counter">0</div>
+                </div>
+                <div class="row dot-container">
+                  <div class="col"><div class="hit-100"></div></div>
+                  <div class="col"><div class="hit-50"></div></div>
+                  <div class="col"><div class="hit-0"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container mx-0 pp-perfect">
+            <div class="row">
+              <div class="pp_txt col-sm">
+                <div id="pp_num">
+                  SS: <font id="pp_ss_num"></font><font class="red">pp</font>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </head>
+  <body>
+    <script src="deps/countUp.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

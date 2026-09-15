@@ -1,0 +1,8 @@
+Usecase: obs-overlay
+Name: RyuK Remake
+Version: 2.0
+Author: _StarChaser
+CompatibleWith: tosu
+Resolution: 600 x 110
+authorLinks: https://github.com/ST4RCHASER/tosu-overlays
+Notes: RyuK-style pp counter: current pp, SS pp, pp-for-FC, grade, 100/50/miss, slider breaks.

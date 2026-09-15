@@ -1,0 +1,8 @@
+Usecase: obs-overlay
+Name: FlyingTuna Remake Song Info
+Version: 2.0
+Author: _StarChaser
+CompatibleWith: tosu
+Resolution: 1024 x 135
+authorLinks: https://github.com/ST4RCHASER/tosu-overlays
+Notes: Song info companion for FlyingTuna Remake: artist/title/mapper/diff, background from the tosu files API, pp at 95-100%.

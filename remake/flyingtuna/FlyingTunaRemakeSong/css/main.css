@@ -1,0 +1,126 @@
+html,
+body {
+  font-size: 28px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 1100px;
+  height: 130px;
+  overflow: hidden;
+  font-weight: bold;
+}
+.main_box{
+  background-image: url('../images/empty.jpg');
+  width: 769px;
+  height: 106px;
+  position: fixed;
+  top: 15px;
+  border-radius: 20px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  box-shadow: 0px 30px 40px 3px #000 inset;
+  text-align: center;
+  z-index: 1;
+}
+.main_box .song_info{
+  transform: translateY(35%);
+}
+.song_text{
+  text-shadow: 0px 4px 4px #000;
+}
+.box{
+  background-color: #121213;
+  font-size: 24px !important;
+  border: 5px solid #2F2E30;
+  border-radius: 15px;
+  text-align: center;
+  /* box-shadow: -14px 0px 13px 0px #444344 inset; */
+}
+.mapper_box{
+  position: fixed;
+  width: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  left: 20px;
+  bottom: 40px;
+  display: inline;
+}
+.name_txt{
+  display: inline;
+  padding-right: 5px;
+}
+.shadow{
+  display: inline;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, #1C1C1C 100%);
+  width: 35px;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.diff_name_box{
+  position: fixed;
+  width: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  right: 350px;
+  bottom: 40px;
+  display: inline;
+}
+.sub_box_top{
+  position: fixed;
+  font-size: 12px;
+  right: 112px;
+  top: 16px;
+  width: 230px;
+  height: 45px;
+  background-color: #212022;
+  text-align: center;
+  padding-top: 8px;
+  border-top-right-radius: 15px;
+  transition: 0.5s;
+}
+.sub_box_bottom{
+  position: fixed;
+  font-size: 12px;
+  right: 112px;
+  bottom: 10px;
+  width: 230px;
+  height: 45px;
+  background-color: #212022;
+  text-align: center;
+  padding-top: 8px;
+  border-bottom-right-radius: 15px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.sub_box_top {
+  border-bottom: 1px solid white;
+}
+table{
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 10px;
+  border-collapse: separate;
+  border-spacing: 10px 0;
+}
+.percent{
+  background-color: #1a191b;
+  border-radius: 15px;
+}
+.percent_num{
+  padding-top: 5px;
+}
+.bottom{
+  padding-top: 3px;
+}
+.hide {
+  right: 331px;
+}
+#mapper_name_txt {
+  padding-left: 5px;
+}

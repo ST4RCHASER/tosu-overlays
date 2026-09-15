@@ -1,0 +1,8 @@
+{
+  "name": "tosu-overlays",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"remake/**/test/*.test.js\""
+  }
+}

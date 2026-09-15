@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sotarks</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  <script src="deps/anime.min.js"></script>
+  <link rel="stylesheet" href="css/odometr.css" />
+  <body>
+    <div id="song_box" class="song_box">
+    <div id="song_box_img" class="img"></div>
+    <div class="title" id="song_box_title">Song Title</div>
+    <div class="subtitle" id="song_box_artist">Song Artist</div>
+    <div class="map_status" id="song_box_status">PENDING</div>
+    <div class="map_diff" id="song_box_diff">Normal</div>
+    <div id="mods"></div>
+    <div class="download_box"><i class="fas fa-file-download"></i> <div id="song_box_map_id">12356</div></div>
+  </div>
+    <div class="cutin hide" id="cutin">
+      <div class="box">
+      <div class="logo"></div>
+      <h2 id="cutin_title" >Song title</h2>
+      <h3 id="cutin_artist">Song artist</h3>
+      <div id="cutin_bgbox" class="bg_box">
+        <!-- <img src="" id="cutin_bgbox_img"> -->
+      </div>
+      <h3 id="cutin_diff">Difficulty Name</h3>
+      <h4 id="cutin_mapper">Creator</h4>
+      </div>
+      <div id="cutin_bg_view" class="bg"></div>
+  </div>
+    <div class="mini_pp" id="mini_pp">
+      <div class="odometer" id="mini_pp_num">0</div>pp
+    </div>
+    <div class="diff_box" id="diff_box_1">
+      CS:
+      <div id="cs_box" class="inline">0.0</div>
+    </div>
+    <div class="diff_box" id="diff_box_2">
+      AR:
+      <div id="ar_box" class="inline">0.0</div>
+    </div>
+    <div class="diff_box" id="diff_box_3">
+      <i class="fas fa-star"></i>
+      <div id="star_box" class="inline">0.0</div>
+    </div>
+    <div class="diff_box" id="diff_box_4">
+      OD:
+      <div id="od_box" class="inline">0.0</div>
+    </div>
+    <div class="diff_box" id="diff_box_5">
+      HP:
+      <div id="hp_box" class="inline">0.0</div>
+    </div>
+    <div class="pp_percent_box main" id="pp_percent_box">
+      <table>
+        <tr style="font-size: 20px;">
+          <th class="pp_mark">SS</th>
+          <th class="pp_mark">99%</th>
+          <th class="pp_mark">98%</th>
+        </tr>
+        <tr style="font-size: 30px;">
+          <td id="pp_100">0</td>
+          <td id="pp_99">0</td>
+          <td id="pp_98">0</td>
+        </tr>
+        <tr style="font-size: 20px;">
+          <th class="pp_mark">97%</th>
+          <th class="pp_mark">96%</th>
+          <th class="pp_mark">&nbsp;</th>
+        </tr>
+        <tr style="font-size: 30px;">
+          <td id="pp_97">0</td>
+          <td id="pp_96">0</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+    <div class="pp_percent_box sub" id="counting_box">
+      <table
+        style="
+          width: 100%;
+          padding-top: 15%;
+          font-size: 24px;
+          text-align: center;
+        "
+      >
+        <tr>
+          <th><div class="mark_100">x100</div></th>
+          <th class="mark_50">x50</th>
+          <th class="mark_miss">xMiss</th>
+        </tr>
+        <tr>
+          <td><div class="odometer" id="count_100">0</div></td>
+          <td><div class="odometer" id="count_50">0</div></td>
+          <td><div class="odometer" id="count_0">0</div></td>
+        </tr>
+      </table>
+    </div>
+    <div id="progress_box">
+      <div>
+        <canvas id="canvas" width="1110" height="60"></canvas>
+      </div>
+      <div id="progress">
+        <div>
+          <canvas id="canvasSecond" width="1110" height="60"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="deps/odometr.js"></script>
+  <script src="deps/Chart.min.js"></script>
+  <script type="module" src="index.js"></script>
+</html>
